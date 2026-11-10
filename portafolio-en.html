@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Elida Rodríguez | Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Chewy&family=Inter:wght@500;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com/3.4.17"></script>
+<script src="js/tailwind.config.js"></script>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="font-body antialiased">
+
+<header class="fixed inset-x-0 top-0 z-20 bg-bg2/90 backdrop-blur" style="padding-top:env(safe-area-inset-top,0px)">
+<div class="flex items-center justify-between h-[72px] px-4 sm:px-10">
+<a href="#inicio" class="font-semibold">Elida Rodríguez</a>
+<div class="flex items-center gap-3">
+<nav id="nav" class="hidden md:flex items-center gap-5 lg:gap-8 text-sm" aria-label="Main">
+<a href="#inicio" class="text-mu hover:text-tx border-b-2 border-transparent hover:border-tx py-1 [&.on]:text-tx [&.on]:border-tx">Home</a><a href="#sobre-mi" class="text-mu hover:text-tx border-b-2 border-transparent hover:border-tx py-1 [&.on]:text-tx [&.on]:border-tx">About me</a><a href="#stack" class="text-mu hover:text-tx border-b-2 border-transparent hover:border-tx py-1 [&.on]:text-tx [&.on]:border-tx">Stack</a><a href="#proyectos" class="text-mu hover:text-tx border-b-2 border-transparent hover:border-tx py-1 [&.on]:text-tx [&.on]:border-tx">Projects</a><a href="#cursos" class="text-mu hover:text-tx border-b-2 border-transparent hover:border-tx py-1 [&.on]:text-tx [&.on]:border-tx">Courses</a><a href="#reconocimientos" class="text-mu hover:text-tx border-b-2 border-transparent hover:border-tx py-1 [&.on]:text-tx [&.on]:border-tx">Awards</a><a href="#certificaciones" class="text-mu hover:text-tx border-b-2 border-transparent hover:border-tx py-1 [&.on]:text-tx [&.on]:border-tx">Certifications</a><a href="#contacto" class="text-mu hover:text-tx border-b-2 border-transparent hover:border-tx py-1 [&.on]:text-tx [&.on]:border-tx">Contact</a>
+</nav>
+<a href="portafolio-es.html" hreflang="es" class="h-[38px] px-3 grid place-items-center rounded-full border border-ln text-sm font-bold hover:border-tx" aria-label="Versión en español">🌐 ES</a>
+<button id="th" class="w-[38px] h-[38px] rounded-full border border-ln hover:border-tx" aria-label="Toggle theme">◐</button>
+<button id="bg" class="md:hidden w-[38px] h-[38px] rounded-full border border-ln grid place-items-center" aria-label="Open menu" aria-expanded="false"><span class="block w-5 h-0.5 bg-tx shadow-[0_6px_0_var(--tx)] -translate-y-[3px]"></span></button>
+</div></div>
+<nav id="mnav" class="hidden md:hidden flex flex-col px-4 pb-4 bg-bg2" aria-label="Mobile"><a href="#inicio" class="py-3.5 border-b border-ln text-mu">Home</a><a href="#sobre-mi" class="py-3.5 border-b border-ln text-mu">About me</a><a href="#stack" class="py-3.5 border-b border-ln text-mu">Stack</a><a href="#proyectos" class="py-3.5 border-b border-ln text-mu">Projects</a><a href="#cursos" class="py-3.5 border-b border-ln text-mu">Courses</a><a href="#reconocimientos" class="py-3.5 border-b border-ln text-mu">Awards</a><a href="#certificaciones" class="py-3.5 border-b border-ln text-mu">Certifications</a><a href="#contacto" class="py-3.5 border-b border-ln text-mu">Contact</a></nav>
+</header>
+
+<main>
+<!-- HERO -->
+<section id="inicio" class="relative min-h-screen flex items-center justify-center overflow-hidden px-5 pt-28 pb-16">
+<div class="blob w-72 h-72 bg-brand top-24 -left-16"></div>
+<div class="blob w-80 h-80 bg-brand2 bottom-10 -right-20" style="animation-delay:-4s"></div>
+<div class="rise relative flex flex-col items-center text-center max-w-3xl">
+<div class="relative w-40 h-40 sm:w-48 sm:h-48">
+<div class="ring absolute inset-0 rounded-full"></div>
+<div class="absolute inset-[5px] rounded-full overflow-hidden bg-white">
+<img src="assets/img/retrato.jpg" alt="Portrait of Elida Rodríguez" class="w-full h-full object-cover" style="object-position:50% 22%">
+</div></div>
+<p class="mt-7 font-chewy text-2xl text-brand">Hi, I'm</p>
+<div class="font-chewy text-4xl sm:text-5xl mt-3 bg-gradient-to-r from-brand to-brand2 bg-clip-text text-transparent">Elida Rodríguez</div>
+<p class="text-mu mt-5 max-w-xl">Student at Centro ¡Supérate! Hilasal and Instituto Nacional Tecpan.</p>
+<div class="flex flex-wrap justify-center gap-3 mt-8">
+<a class="btn" href="#proyectos">See my projects</a><a class="btn o" href="#contacto">Contact me</a>
+</div>
+<div class="flex gap-3 mt-7">
+<a href="https://www.linkedin.com/in/elida-yamileth-rodriguez-pineda?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener" aria-label="LinkedIn" class="w-11 h-11 rounded-full grid place-items-center border border-ln hover:bg-[#0a66c2] hover:border-[#0a66c2] hover:text-white transition"><svg viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a>
+<a href="https://github.com/Yami-rp" target="_blank" rel="noopener" aria-label="GitHub" class="w-11 h-11 rounded-full grid place-items-center border border-ln hover:bg-ac hover:text-actx transition"><svg viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.76 2.69 1.25 3.35.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5z"/></svg></a>
+<a href="mailto:rodriguezyamileth2080@gmail.com" aria-label="Email" class="w-11 h-11 rounded-full grid place-items-center border border-ln hover:bg-brand hover:border-brand hover:text-white transition"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5"><rect x="2" y="4" width="20" height="16" rx="3"/><path d="m3 7 9 6 9-6"/></svg></a>
+</div></div>
+</section>
+
+<!-- ABOUT -->
+<section id="sobre-mi" class="py-20 md:py-28"><div class="max-w-[1180px] mx-auto px-5 sm:px-10 grid md:grid-cols-[1.1fr_.9fr] gap-10 md:gap-16 items-center">
+<div class="reveal">
+<h2 class="h2 font-display font-extrabold text-4xl sm:text-5xl">About me</h2>
+<p class="text-mu mt-7 max-w-[62ch]">I am a third-year student at Centro ¡Supérate! Hilasal and a technical high school graduate specializing in Administrative Accounting. I am passionate about the business world and enjoy discovering new perspectives and different ways of seeing the world. I consider myself curious, resilient, and responsible. I do not give up easily when facing challenges; I always look for solutions and opportunities to continue growing. I also enjoy helping others without expecting anything in return.</p>
+<div class="grid sm:grid-cols-2 gap-7 mt-9">
+<div><h3 class="font-display font-bold">My vision</h3><p class="text-mu text-[.95rem] mt-2">To become a successful, innovative, and well-prepared professional, capable of achieving my goals, taking advantage of new opportunities, and making a positive impact on society.</p></div>
+<div><h3 class="font-display font-bold">My mission</h3><p class="text-mu text-[.95rem] mt-2">To grow personally and professionally through continuous learning, developing my skills, creativity, and knowledge to contribute ideas, overcome challenges, and make a positive impact on my surroundings.</p></div></div>
+<div class="flex flex-wrap gap-x-14 gap-y-6 mt-11">
+<div><b data-n="5" class="block font-display font-extrabold text-5xl">0</b><span class="text-mu text-sm">courses & modules</span></div>
+<div><b data-n="95" class="block font-display font-extrabold text-5xl">0</b><span class="text-mu text-sm">training hours</span></div>
+<div><b data-n="3" class="block font-display font-extrabold text-5xl">0</b><span class="text-mu text-sm">projects</span></div></div></div>
+<img src="assets/img/Img.me.jfif" alt="" loading="lazy" class="reveal w-full aspect-[16/10] md:aspect-square object-cover grayscale rounded-2xl">
+</div></section>
+
+<section id="stack" class="py-20 md:py-28 border-t border-ln">
+<div class="max-w-[1180px] mx-auto px-5 sm:px-10 text-center">
+  <h2 class="h2 font-display font-extrabold text-4xl sm:text-5xl">My Tech Stack</h2>
+  <p class="text-mu mx-auto mt-6 max-w-[62ch]">Tap a tool to see how I use it.</p>
+  <div id="stf" class="flex flex-wrap justify-center gap-2 mt-8"></div>
+  <div id="stg" class="grid gap-4 mt-10 [grid-template-columns:repeat(auto-fit,minmax(140px,1fr))]"></div>
+  <div id="std" class="mx-auto mt-8 max-w-xl text-left" aria-live="polite"></div>
+</div>
+</section>
+
+<style>
+.tech{--c:#888;display:flex;flex-direction:column;align-items:center;gap:12px;padding:22px 12px;
+  border:1px solid var(--ln,#fff3);border-radius:20px;background:transparent;cursor:pointer;
+  transition:transform .25s,box-shadow .25s,border-color .25s;animation:techIn .4s both}
+.tech:hover,.tech:focus-visible{transform:translateY(-6px);border-color:var(--c);box-shadow:0 14px 30px -14px var(--c)}
+.tech[aria-pressed="true"]{border-color:var(--c);box-shadow:0 0 0 1px var(--c),0 14px 30px -14px var(--c)}
+.tech img{width:48px;height:48px;transition:transform .3s}
+.tech:hover img{transform:scale(1.2) rotate(-6deg)}
+.dark .tech .inv{filter:invert(1)}
+.tchip{padding:6px 16px;border-radius:999px;border:1px solid var(--ln,#fff3);font-size:.85rem;transition:.2s}
+.tchip:hover{border-color:currentColor}
+.tchip[aria-pressed="true"]{background:var(--ac,#fff);color:var(--actx,#000)}
+.tdet{border-left:4px solid var(--c);padding:16px 20px;border-radius:0 16px 16px 0;background:#ffffff0d;animation:techIn .3s both}
+@keyframes techIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.tech,.tdet{animation:none;transition:none}}
+</style>
+
+<script>
+(()=>{
+const T=[
+ {n:'Canva',i:'assets/img/canva.svg',c:'00C4CC',cat:'Design',d:'I design graphics, presentations and visual material for my projects.'},
+ {n:'Figma',s:'figma',c:'F24E1E',cat:'Design',d:'I create prototypes and interface designs before turning them into code.'},
+ {n:'HTML',s:'html5',c:'E34F26',cat:'Frontend',d:'I structure the content of my websites using semantic markup.'},
+ {n:'Tailwind CSS',s:'tailwindcss',c:'06B6D4',cat:'Frontend',d:'I style my pages quickly with responsive design.'},
+ {n:'JavaScript',s:'javascript',c:'F7DF1E',cat:'Frontend',d:'I add interactivity: forms, animations and site logic.'},
+ {n:'Next.js',s:'nextdotjs',c:'000000',inv:1,cat:'Frontend',d:'I build modern web applications with React.'},
+ {n:'Node.js',s:'nodedotjs',c:'5FA04E',cat:'Backend',d:'I run JavaScript on the server and build the logic of my applications.'},
+ {n:'Supabase',s:'supabase',c:'3FCF8E',cat:'Backend',d:'I manage databases and user authentication.'},
+ {n:'GitHub',s:'github',c:'000000',inv:1,cat:'Tools',d:'I store my code, track versions and publish my projects.'}
+];
+const $=id=>document.getElementById(id), f=$('stf'), g=$('stg'), d=$('std');
+const cats=['All',...new Set(T.map(t=>t.cat))];
+let cat='All', sel=T[0];
+
+function detail(){
+  d.innerHTML=`<div class="tdet" style="--c:#${sel.c==='000000'?'888888':sel.c}">
+    <div class="flex items-center gap-3"><b class="font-display text-xl">${sel.n}</b>
+    <span class="text-xs px-2.5 py-0.5 rounded-full border border-ln text-mu">${sel.cat}</span></div>
+    <p class="text-mu mt-2">${sel.d}</p></div>`;
+}
+function grid(){
+  g.innerHTML='';
+  T.filter(t=>cat==='All'||t.cat===cat).forEach((t,i)=>{
+    const b=document.createElement('button');
+    b.className='tech'; b.type='button';
+    b.style.setProperty('--c','#'+(t.c==='000000'?'888888':t.c));
+    b.style.animationDelay=i*50+'ms';
+    b.setAttribute('aria-pressed',t===sel);
+    b.innerHTML=`<img class="${t.inv?'inv':''}" src="${t.i||'https://cdn.simpleicons.org/'+t.s+'/'+t.c}" alt="" loading="lazy"><span class="font-semibold text-sm">${t.n}</span>`;
+    b.onclick=()=>{sel=t;detail();[...g.children].forEach(x=>x.setAttribute('aria-pressed',x===b))};
+    g.appendChild(b);
+  });
+}
+function chips(){
+  f.innerHTML='';
+  cats.forEach(c=>{
+    const b=document.createElement('button');
+    b.className='tchip'; b.type='button'; b.textContent=c; b.setAttribute('aria-pressed',c===cat);
+    b.onclick=()=>{cat=c;
+      const vis=T.filter(t=>c==='All'||t.cat===c); if(!vis.includes(sel)) sel=vis[0];
+      chips();grid();detail()};
+    f.appendChild(b);
+  });
+}
+chips();grid();detail();
+})();
+</script>
+
+
+<section id="proyectos" class="py-20 md:py-28 bg-bg2"><div class="max-w-[1180px] mx-auto px-5 sm:px-10 c text-center">
+<h2 class="h2 font-display font-extrabold text-4xl sm:text-5xl">My projects</h2>
+<div id="pj" class="grid gap-7 mt-14 [grid-template-columns:repeat(auto-fit,minmax(280px,1fr))]"></div></div></section>
+
+<section id="cursos" class="py-20 md:py-28"><div class="max-w-[1180px] mx-auto px-5 sm:px-10 c text-center">
+<h2 class="h2 font-display font-extrabold text-4xl sm:text-5xl">My courses</h2>
+<p class="text-mu mx-auto mt-6 max-w-[62ch]">Courses completed on Platzi. Tap a certificate to see it in full.</p>
+<div id="cs" class="grid gap-7 mt-14 [grid-template-columns:repeat(auto-fit,minmax(230px,1fr))]"></div></div></section>
+
+<section id="reconocimientos" class="py-20 md:py-28 bg-bg2"><div class="max-w-[1180px] mx-auto px-5 sm:px-10 c text-center">
+<h2 class="h2 font-display font-extrabold text-4xl sm:text-5xl">Awards</h2>
+<p class="text-mu mx-auto mt-6 max-w-[62ch]">Throughout my three years at ¡Supérate!, I have received various recognitions. Here are some of them.</p>
+<div id="rc" class="grid gap-7 mt-14 [grid-template-columns:repeat(auto-fit,minmax(230px,1fr))]"></div></div></section>
+
+<section id="certificaciones" class="py-20 md:py-28"><div class="max-w-[1180px] mx-auto px-5 sm:px-10 c text-center">
+<h2 class="h2 font-display font-extrabold text-4xl sm:text-5xl">Certifications</h2>
+<p class="text-mu mx-auto mt-6 max-w-[62ch]">Official Microsoft Office Specialist certifications. Tap one to see it in full.</p>
+<div id="ct" class="grid gap-7 mt-14 [grid-template-columns:repeat(auto-fit,minmax(280px,1fr))]"></div></div></section>
+
+<!-- CONTACT -->
+<section id="contacto" class="relative py-20 md:py-28 overflow-hidden">
+<div class="blob w-72 h-72 bg-brand top-10 -right-24"></div>
+<div class="max-w-[1180px] mx-auto px-5 sm:px-10 grid lg:grid-cols-[.9fr_1.1fr] gap-12 lg:gap-16 items-start relative">
+<div class="reveal">
+<h2 class="h2 font-display font-extrabold text-4xl sm:text-5xl">Contact</h2>
+<p class="text-mu mt-7 max-w-[48ch]">Got an idea, an opportunity, or just want to say hi? Write to me and I'll get back to you soon.</p>
+<ul class="mt-9 grid gap-4">
+<li class="flex flex-wrap items-center gap-3"><span class="w-10 h-10 rounded-full bg-ac text-actx grid place-items-center"><svg viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5"><path d="M17.5 14.4c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.65.07a8.2 8.2 0 0 1-2.4-1.48 9 9 0 0 1-1.66-2.07c-.17-.3 0-.46.13-.6.13-.14.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.6-.92-2.2-.24-.58-.49-.5-.67-.5h-.57c-.2 0-.52.08-.8.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.22 3.08c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.7.63.71.23 1.36.2 1.87.12.57-.08 1.75-.72 2-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35zM12.05 21.8a9.8 9.8 0 0 1-5-1.37l-.36-.21-3.72.97 1-3.63-.24-.37a9.8 9.8 0 1 1 8.32 4.61zM12.05 0A12 12 0 0 0 1.6 17.9L0 24l6.27-1.64A12 12 0 1 0 12.05 0z"/></svg></span><a class="border-b border-ln hover:border-tx" href="https://wa.me/50370898406" target="_blank" rel="noopener">+503 7089-8406</a><button class="cp text-xs px-3 py-0.5 rounded-full border border-ln text-mu hover:text-tx hover:border-tx" data-c="+503 7089-8406">Copy</button></li>
+<li class="flex flex-wrap items-center gap-3"><span class="w-10 h-10 rounded-full bg-[#0a66c2] text-white grid place-items-center"><svg viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></span><a class="border-b border-ln hover:border-tx" href="https://www.linkedin.com/in/elida-yamileth-rodriguez-pineda?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener">LinkedIn · Elida Rodríguez</a></li>
+<li class="flex flex-wrap items-center gap-3"><span class="w-10 h-10 rounded-full bg-ac text-actx grid place-items-center"><svg viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.76 2.69 1.25 3.35.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5z"/></svg></span><a class="border-b border-ln hover:border-tx" href="https://github.com/Yami-rp" target="_blank" rel="noopener">Yami-rp</a></li>
+<li class="flex flex-wrap items-center gap-3"><span class="w-10 h-10 rounded-full bg-ac text-actx grid place-items-center"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5"><rect x="2" y="4" width="20" height="16" rx="3"/><path d="m3 7 9 6 9-6"/></svg></span><a class="border-b border-ln hover:border-tx break-all" href="mailto:rodriguezyamileth2080@gmail.com">rodriguezyamileth2080@gmail.com</a><button class="cp text-xs px-3 py-0.5 rounded-full border border-ln text-mu hover:text-tx hover:border-tx" data-c="rodriguezyamileth2080@gmail.com">Copy</button></li>
+<li class="flex items-center gap-3"><span class="w-10 h-10 shrink-0 rounded-full bg-ac text-actx grid place-items-center"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg></span><span>San Juan Opico, La Libertad Centro, El Salvador</span></li></ul>
+<div class="flex flex-wrap gap-2 mt-8"><span class="text-xs px-3 py-1.5 rounded-full border border-ln text-mu">Quick replies</span><span class="text-xs px-3 py-1.5 rounded-full border border-ln text-mu">Open to collaborate</span></div>
+</div>
+
+<div id="card" class="reveal relative rounded-3xl p-[1.5px] bg-gradient-to-br from-brand via-ln to-brand2">
+<div class="glow relative rounded-[22px] bg-bg2 p-6 sm:p-9 overflow-hidden">
+<div class="absolute -top-px left-8 right-8 h-1 rounded-b bg-gradient-to-r from-brand to-brand2"></div>
+<div id="formWrap">
+<form id="cf" novalidate class="grid gap-4">
+<div class="field"><input id="fn" name="name" type="text" placeholder=" " autocomplete="name" required><label for="fn">Name</label></div>
+<div class="field"><input id="fe" name="email" type="email" placeholder=" " autocomplete="email" required><label for="fe">Email</label></div>
+<div class="field"><textarea id="fm" name="message" rows="5" maxlength="600" placeholder=" " required></textarea><label for="fm">Message</label>
+<span id="cnt" class="absolute right-4 bottom-3 text-xs text-mu">0/600</span></div>
+<p id="err" class="text-sm text-[#ff6b6b] hidden" role="alert">Please fill in every field with a valid email.</p>
+<button id="sb" type="submit" class="btn w-full !py-4 text-base group">
+<span id="sl">Send message</span>
+
+</button>
+</form></div>
+<div id="thanks" class="hidden text-center py-10">
+<div class="done-pop mx-auto w-20 h-20 rounded-full bg-gradient-to-br from-brand to-brand2 grid place-items-center text-white text-4xl">✓</div>
+<h3 class="font-chewy text-4xl mt-6">Thank you!</h3><p class="text-mu mt-2">Your message is on its way.</p>
+<button id="again" class="btn o mt-7">Write another</button></div>
+</div></div>
+</div></section>
+</main>
+
+<footer class="bg-bg2 py-7 text-mu text-sm"><div class="max-w-[1180px] mx-auto px-5 sm:px-10 flex flex-wrap justify-between gap-3">
+<span>© 2026 Elida Rodríguez</span>
+
+<dialog id="dlg" aria-label="Detail"><button class="sticky top-2.5 float-right mr-2.5 mt-2.5 z-10 w-[38px] h-[38px] rounded-full border border-ln bg-bg" id="dx" aria-label="Close">✕</button><div class="p-5 sm:p-8 grid gap-4" id="dc"></div></dialog>
+<div id="toast" role="status"></div>
+
+<script src="js/data-en.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
