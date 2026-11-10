@@ -18,14 +18,14 @@ const S = {
   projs: [
     { n: "SecureSence", k: "sec", bg: "#5b7a66", fit: "contain", d: "Proyecto para ayudar a las personas cuando más lo necesitan: permitía contactar a las ambulancias más cercanas y tenía un botón de emergencia que llamaba automáticamente al centro de ambulancias más cercano.", l: [],
       video: "videos/securesence.mp4",
-      role: "Escribe aquí tu rol en SecureSence.",
-      tech: ["HTML", "CSS", "JavaScript"] },
+      role: "Diseñadora.",
+      tech: ["Microsoft Lists", "Power Apps", "Figma"] },
     { n: "MedSpark", k: "med", bg: "#06063a", fit: "cover", d: "Sitio web para cuidar el bolsillo de los salvadoreños mediante cashback: los clientes compraban productos médicos en farmacias aliadas y recibían cashback en cada compra.", l: ["https://jeferson50.github.io/MedSpark2.0/"],
-      role: "Escribe aquí tu rol en MedSpark.",
-      tech: ["HTML", "CSS", "JavaScript"] },
+      role: "Diseñadora, Programadora frontend, Desarrolladora de pitch y Speaker.",
+      tech: ["React", "Tailwind CSS", "JavaScript", "Clerck", "GitHub" ] },
     { n: "Loqalli", k: "loq", bg: "#fff", fit: "cover", d: "Loqalli es una plataforma digital que conecta turistas con emprendedores locales para compartir experiencias culturales, promover las tradiciones salvadoreñas e impulsar la economía local.", l: ["https://loqalli-expo-tech.vercel.app/"],
       role: "Programadora Frontend y Backend, además de participar en la elaboración y presentación del pitch del proyecto.",
-      tech: ["Next.js", "Node.js", "Supabase", "Tailwind CSS", "GitHub"] }
+      tech: ["Next.js", "Node.js", "Supabase", "Tailwind CSS","Verify", "GitHub"] }
   ],
   courses_l: ["Supply Chain", "Innovación Empresarial", "Fundamentos de Ecommerce", "Resolución de Conflictos"],
   /* Reconocimientos agrupados por año: cada año es una card */
