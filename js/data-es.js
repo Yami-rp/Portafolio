@@ -6,7 +6,7 @@ const IM = {
 };
 
 const S = {
-  role: "Mi  rol fue de diseñadora ", tech: "Tecnologías usadas fueron Figma",
+  role: "Mi rol", tech: "Tecnologías usadas",
   project: "Proyecto", more: "Más información", noLink: "Este proyecto aún no tiene enlace público.", view: "Ver proyecto",
   hrs: "horas de teoría y práctica. Aprobado el 8 de noviembre de 2026 en Platzi.",
   platzi: "Ver perfil en Platzi", code: "Código de verificación",
@@ -15,13 +15,13 @@ const S = {
   certDate: "Fecha de logro", certExp: "Vence 5 años después de la fecha de emisión.", certVerify: "Verificar en Certiport",
   send: "Enviar mensaje", sending: "Enviando…", ok: "¡Mensaje listo! Se abrirá tu app de correo para enviarlo.",
   copied: "Copiado", nocopy: "No se pudo copiar", subj: "Mensaje desde tu portafolio", from_: "De",
-    projs: [
+  projs: [
     { n: "SecureSence", k: "sec", bg: "#5b7a66", fit: "contain", d: "Proyecto para ayudar a las personas cuando más lo necesitan: permitía contactar a las ambulancias más cercanas y tenía un botón de emergencia que llamaba automáticamente al centro de ambulancias más cercano.", l: [],
       video: "videos/securesence.mp4",
-      role: "Mi rol fue de dseñadora",
-      tech: ["Figma"] },
+      role: "Escribe aquí tu rol en SecureSence.",
+      tech: ["HTML", "CSS", "JavaScript"] },
     { n: "MedSpark", k: "med", bg: "#06063a", fit: "cover", d: "Sitio web para cuidar el bolsillo de los salvadoreños mediante cashback: los clientes compraban productos médicos en farmacias aliadas y recibían cashback en cada compra.", l: ["https://jeferson50.github.io/MedSpark2.0/"],
-      role: "ESCRIBE AQUÍ TU ROL EN MEDSPARK",
+      role: "Escribe aquí tu rol en MedSpark.",
       tech: ["HTML", "CSS", "JavaScript"] },
     { n: "Loqalli", k: "loq", bg: "#fff", fit: "cover", d: "Loqalli es una plataforma digital que conecta turistas con emprendedores locales para compartir experiencias culturales, promover las tradiciones salvadoreñas e impulsar la economía local.", l: ["https://loqalli-expo-tech.vercel.app/"],
       role: "Programadora Frontend y Backend, además de participar en la elaboración y presentación del pitch del proyecto.",

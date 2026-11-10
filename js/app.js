@@ -17,6 +17,21 @@ const CERTIFICACIONES = S.certs;
 /* ---------- utilidades ---------- */
 const $ = s => document.querySelector(s), dlg = $("#dlg"), dc = $("#dc");
 const esc = s => s.replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const TI = {
+  "Canva": { i: "assets/img/canva.svg" },
+  "Figma": { s: "figma", c: "F24E1E" },
+  "HTML": { s: "html5", c: "E34F26" },
+  "CSS": { s: "css3", c: "1572B6" },
+  "Tailwind CSS": { s: "tailwindcss", c: "06B6D4" },
+  "JavaScript": { s: "javascript", c: "F7DF1E" },
+  "Next.js": { s: "nextdotjs", c: "888888" },
+  "Node.js": { s: "nodedotjs", c: "5FA04E" },
+  "Supabase": { s: "supabase", c: "3FCF8E" },
+  "GitHub": { s: "github", c: "888888" }
+};
+const techChips = list => list.map(n => { const t = TI[n], src = t ? (t.i || `https://cdn.simpleicons.org/${t.s}/${t.c}`) : "";
+  return `<span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-ln text-sm">${src ? `<img src="${src}" alt="" style="width:18px;height:18px;background:none">` : ""}${esc(n)}</span>` }).join("");
+
 const open = html => { dc.innerHTML = html; dlg.showModal() };
 const BTN = "btn", BTNO = "btn o";
 let tt; function toast(m) { const t = $("#toast"); t.textContent = m; t.classList.add("on"); clearTimeout(tt); tt = setTimeout(() => t.classList.remove("on"), 2600) }
@@ -38,13 +53,14 @@ $("#ct").innerHTML = CERTIFICACIONES.map((c, i) => `<article class="card"><butto
 document.addEventListener("click", e => {
   const t = e.target.closest("[data-p],[data-c],[data-r],[data-k],.cp"); if (!t) return;
   if (t.matches(".cp")) { navigator.clipboard && navigator.clipboard.writeText(t.dataset.c).then(() => toast(S.copied)).catch(() => toast(S.nocopy)); return }
-  if (t.dataset.p !== undefined) { const p = PROYECTOS[t.dataset.p]; open(`<h3 class="font-display font-bold text-2xl">${esc(p.n)}</h3><div style="background:${p.bg};border-radius:8px;padding:16px"><img src="${p.img}" alt="Logo ${esc(p.n)}" style="max-height:200px;background:none"></div><p class="text-mu">${esc(p.d)}</p><div class="flex flex-wrap gap-3">${p.l.length ? p.l.map(l => `<a class="${BTN}" href="${l}" target="_blank" rel="noopener">${S.view}</a>`).join("") : `<span class="text-mu">${S.noLink}</span>`}</div>`); return }
+  if (t.dataset.p !== undefined) { const p = PROYECTOS[t.dataset.p]; open(`<h3 class="font-display font-bold text-2xl">${esc(p.n)}</h3>${p.video ? `<video controls playsinline preload="metadata" poster="${p.img}" style="display:block;margin:0 auto;width:auto;max-width:100%;max-height:70vh;border-radius:12px;background:#000"><source src="${p.video}" type="video/mp4"></video>` : `<div style="background:${p.bg};border-radius:8px;padding:16px"><img src="${p.img}" alt="Logo ${esc(p.n)}" style="max-height:200px;background:none"></div>`}<p class="text-mu">${esc(p.d)}</p>${p.role ? `<div><h4 class="font-display font-bold">${S.role}</h4><p class="text-mu mt-1">${esc(p.role)}</p></div>` : ""}${p.tech ? `<div><h4 class="font-display font-bold">${S.tech}</h4><div class="flex flex-wrap gap-2 mt-2">${techChips(p.tech)}</div></div>` : ""}<div class="flex flex-wrap gap-3">${p.l.length ? p.l.map(l => `<a class="${BTN}" href="${l}" target="_blank" rel="noopener">${S.view}</a>`).join("") : `<span class="text-mu">${S.noLink}</span>`}</div>`); return }
   if (t.dataset.c !== undefined) { const c = CURSOS[t.dataset.c]; open(`<h3 class="font-display font-bold text-2xl">${esc(c.n)}</h3><img src="${c.img}" alt="${esc(c.n)}"><div class="flex flex-wrap gap-3"><a class="${BTN}" href="${PLATZI}" target="_blank" rel="noopener">${S.platzi}</a></div><p class="text-mu text-xs">${S.code}: ${c.id}</p>`); return }
   if (t.dataset.r !== undefined) { const [gi, ri] = t.dataset.r.split(".").map(Number), g = RECONOCIMIENTOS[gi], r = g.items[ri]; open(`<div class="flex items-baseline gap-3"><span class="year">${g.year}</span><h3 class="font-display font-bold text-2xl">${esc(r.n)}</h3></div><img src="${r.img}" alt="${esc(r.n)}"><p class="text-mu">${esc(r.t)}</p>`); return }
   if (t.dataset.k !== undefined) { const c = CERTIFICACIONES[t.dataset.k]; open(`<h3 class="font-display font-bold text-2xl">${esc(c.n)}</h3><p class="text-mu -mt-2">${esc(c.sub)}</p><img src="${c.img}" alt="${esc(c.n)}"><p class="text-mu"><b class="text-tx">${S.certDate}:</b> ${esc(c.date)}<br>${S.certExp}</p><div class="flex flex-wrap gap-3"><a class="${BTN}" href="${CERTIPORT}" target="_blank" rel="noopener">${S.certVerify}</a></div><p class="text-mu text-xs">${S.code}: ${esc(c.code)}</p>`) }
 });
 $("#dx").onclick = () => dlg.close();
 dlg.addEventListener("click", e => { if (e.target === dlg) dlg.close() });
+dlg.addEventListener("close", () => { dc.innerHTML = "" });
 
 /* ---------- menú móvil ---------- */
 const mnav = $("#mnav"), bg = $("#bg");
